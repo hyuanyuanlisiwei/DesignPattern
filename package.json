@@ -1,7 +1,6 @@
 {
-  "name": "office-website",
+  "name": "website",
   "version": "1.0.0",
-  "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,5 +17,15 @@
     "gulp-imagemin": "^3.2.0",
     "gulp-less": "^3.3.0",
     "gulp-uglify": "^2.1.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyuanyuanlisiwei/DesignPattern.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hyuanyuanlisiwei/DesignPattern/issues"
+  },
+  "homepage": "https://github.com/hyuanyuanlisiwei/DesignPattern#readme",
+  "description": ""
 }
