@@ -2,45 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="817979ee-d740-4f77-82ec-79c604f0fb0d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/developer/adver/supercell.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/developer/adver/完美世界.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/developer/adver/巨人网络.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/developer/adver/盛大游戏.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/developer/adver/网易游戏.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/developer/adver/腾讯游戏.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/developer/adver/蜗牛游戏.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/developer/game/CF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/developer/game/僵尸尖叫.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/developer/game/剑灵.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/developer/game/功夫熊猫.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/developer/game/劲舞团.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/developer/game/大话西游.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/developer/game/小汪汪.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/developer/game/开心消消乐.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/developer/game/弹弹堂.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/developer/game/捕鱼来了.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/developer/game/捕鱼达人.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/developer/game/星球大战.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/developer/game/欢乐斗地主.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/developer/game/皇室战争.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/developer/game/皇室战争.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/developer/game/阴阳师.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/dl_banner.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/jiajie_bg.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/developer.html" afterPath="$PROJECT_DIR$/developer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/developer.html" afterPath="$PROJECT_DIR$/dist/developer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/style/advertiser.css" afterPath="$PROJECT_DIR$/dist/style/advertiser.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/style/brief.css" afterPath="$PROJECT_DIR$/dist/style/brief.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/style/common.css" afterPath="$PROJECT_DIR$/dist/style/common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/style/developer.css" afterPath="$PROJECT_DIR$/dist/style/developer.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/xuanzhuan.html" afterPath="$PROJECT_DIR$/dist/xuanzhuan.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/advertiser.css" afterPath="$PROJECT_DIR$/style/advertiser.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/brief.css" afterPath="$PROJECT_DIR$/style/brief.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/common.css" afterPath="$PROJECT_DIR$/style/common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/developer.css" afterPath="$PROJECT_DIR$/style/developer.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xuanzhuan.html" afterPath="$PROJECT_DIR$/xuanzhuan.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -654,7 +616,7 @@
       <option name="presentableId" value="Default" />
       <updated>1495508708540</updated>
       <workItem from="1495508713133" duration="391000" />
-      <workItem from="1495509142833" duration="1604000" />
+      <workItem from="1495509142833" duration="1802000" />
     </task>
     <task id="LOCAL-00001" summary="111">
       <created>1495510616227</created>
@@ -670,11 +632,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495510930571</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="test">
+      <created>1495527953650</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1495527953650</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9425000" />
+    <option name="totallyTimeSpent" value="9623000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1440" y="23" width="1440" height="877" extended-state="0" />
@@ -1078,6 +1047,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="116" column="15" lean-forward="false" selection-start-line="116" selection-start-column="15" selection-end-line="116" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1085,6 +1055,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="412">
           <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1092,6 +1063,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1099,6 +1071,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="156" column="27" lean-forward="true" selection-start-line="156" selection-start-column="27" selection-end-line="156" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1106,6 +1079,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="355">
           <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1113,6 +1087,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="74">
           <caret line="205" column="43" lean-forward="false" selection-start-line="205" selection-start-column="28" selection-end-line="205" selection-end-column="43" />
+          <folding>
+            <element signature="n#section#5;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#1;n#div#1;n#div#0;n#div#1;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#2;n#div#1;n#div#0;n#div#1;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#3;n#div#1;n#div#0;n#div#1;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#4;n#div#1;n#div#0;n#div#1;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#5;n#div#1;n#div#0;n#div#1;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#1;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#1;n#div#2;n#div#0;n#div#1;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#2;n#div#2;n#div#0;n#div#1;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#3;n#div#2;n#div#0;n#div#1;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#4;n#div#2;n#div#0;n#div#1;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1120,6 +1110,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
