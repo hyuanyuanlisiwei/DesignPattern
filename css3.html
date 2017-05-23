@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            margin: 100px auto;
+            width: 200px;
+            height: 200px;
+            /*http://csssecrets.io/images/stone-art.jpg*/
+            border: 2em solid transparent;
+            padding: 1em;
+            background:
+                    linear-gradient(red, green),
+                    url(http://csssecrets.io/images/stone-art.jpg);
+            background-clip: padding-box, border-box;
+            background-size:cover;
+            background-origin: border-box;
+        }
+        .box2{
+            margin: 100px auto;
+            width: 300px;
+            height: 300px;
+            /*http://csssecrets.io/images/stone-art.jpg*/
+            border: 2em solid transparent;
+            padding: 1em;
+            background:
+                    linear-gradient(red,red),
+                    url(http://csssecrets.io/images/stone-art.jpg);
+            background-clip: padding-box,border-box;
+            background-origin: border-box;
+            background-size: cover;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box2"></div>
+
+</body>
+</html>
