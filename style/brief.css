@@ -12,6 +12,7 @@
 }
 /*第一部分*/
 .brief-nav{
+    padding: 5px;
     height: 84px;
     position: fixed;
     left: 0;
@@ -28,7 +29,7 @@
     margin-top: 10px;
 }
 .brief-nav-box>a{
-    color: #c9cacb;
+    color: #9c9d9f;
     padding: 10px;
     width: 150px;
     background-color: #fff;
@@ -47,6 +48,7 @@
 }
 
 .brief-banaer{
+    font-family: zaozi;
     margin-top: 50px;
     padding-top: 50px;
     height: 500px;

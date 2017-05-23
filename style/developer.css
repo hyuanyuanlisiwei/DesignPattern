@@ -32,7 +32,7 @@
     align-items: center;
 }
 .dev-nav-box>a{
-    color: #c9cacb;
+    color: #9c9d9f;
     padding: 10px;
     width: 150px;
     background-color: #fff;
@@ -50,6 +50,7 @@
     background-color: #02d0a7;
 }
 .dev-banaer{
+    font-family: "zaozi";
     margin-top: 35px;
     height: 500px;
     background-color: #3a424f;
@@ -74,6 +75,7 @@
     padding-top: 100px;
 }
 .dev-title{
+    font-family: zaozi;
     margin-bottom: 50px;
 }
 .dev-title>h2{
@@ -102,6 +104,7 @@
     background: #1da3e8;
 }
 .dev-ssp-title>h1{
+    font-family: zaozi;
     font-size: 20px;
     color: #ffffff;
 }
@@ -143,6 +146,9 @@
     width:150px;
     height:150px;
     float: left;
+}
+.dev-adver-group>.box>img{
+    transform: rotate(90deg);
 }
 .red{
     background-color: red;
