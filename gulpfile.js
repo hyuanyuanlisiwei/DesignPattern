@@ -57,7 +57,7 @@ gulp.task("serve",["clean"],function () {
     });
     gulp.watch("js/*.js",["scripts"]);
     gulp.watch("style/*.css",["style"]);
-    gulp.watch("images/*.*",["image"]);
+    gulp.watch("images/**/*.*",["image"]);
     gulp.watch("*.html",["html"]);
 });
 gulp.task("default",["serve"]);
