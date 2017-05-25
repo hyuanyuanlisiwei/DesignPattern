@@ -16,9 +16,10 @@ gulp.task("scripts",function () {
 });
 //操作css文件
 const cssnano=require("gulp-cssnano");
+const minifycss=require("gulp-minify-css");
 gulp.task("style",function () {
     gulp.src("style/*.css")
-        .pipe(cssnano())
+        .pipe(minifycss())
         .pipe(gulp.dest("dist/style"))
         .pipe(browserSync.stream());
 });
@@ -57,7 +58,7 @@ gulp.task("serve",["clean"],function () {
     });
     gulp.watch("js/*.js",["scripts"]);
     gulp.watch("style/*.css",["style"]);
-    gulp.watch("images/**/*.*",["image"]);
+    gulp.watch("images/**/*.{png,jpg,jpeg,gif}",["image"]);
     gulp.watch("*.html",["html"]);
 });
 gulp.task("default",["serve"]);

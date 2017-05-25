@@ -172,18 +172,54 @@
 .adver-media-parts img{
     display: block;
 }
-.adver-media-parts>img{
+.adver-media-parts img.big{
     width: 236px;
     height: 236px;
 }
-.adver-media-parts>.column{
+.adver-media-parts .column{
     display: flex;
     flex-direction:column;
 }
-.adver-media-parts>.column>img{
+.adver-media-parts .column img.small{
     width:118px;
     height: 118px;
 }
+/* entire container, keeps perspective */
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    width: 118px;
+    height: 118px;
+}
+
+/* flip speed goes here */
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+}
+
 .adver-brand{
     margin-top: 80px;
     margin-bottom: 100px;

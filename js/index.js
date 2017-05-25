@@ -14,17 +14,17 @@ function adverTurns() {
     var next=$("#adver-next");
     var prev=$("#adver-prev");
     var width=250;
-    var maxWidth=width*5;
+    var maxWidth=width*3;
     prev.on("click",function () {
         adverCount--;
         if(adverCount<0){
-            adverCount=4;
+            adverCount=2;
         }
         imgsList.animate({left:-adverCount*width});
     });
     next.on("click",function () {
         adverCount++;
-        if(adverCount>4){
+        if(adverCount>2){
             adverCount=0;
         }
         imgsList.animate({left:-adverCount*width});
