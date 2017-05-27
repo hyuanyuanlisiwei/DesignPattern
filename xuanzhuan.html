@@ -9,15 +9,20 @@
             /*perspective: 1000;*/
         }
         /* flip the pane when hovered */
-        .flip-container:hover .flipper, .flip-container.hover .flipper {
+        .flip-container:hover .flipper,.flip-container.hover .flipper{
             transform: rotateY(180deg);
         }
-
-        .flip-container, .front, .back {
+        .flip-container, .front, .back,.flipper {
             width: 320px;
-            height: 480px;
+            height: 200px;
         }
-
+        .front{
+            background: blue;
+        }
+        .back{
+            height: 600px;
+            background: red;
+        }
         /* flip speed goes here */
         .flipper {
             transition: 0.6s;
@@ -37,22 +42,13 @@
         .front {
             z-index: 2;
         }
-
         /* back, initially hidden pane */
         .back {
             transform: rotateY(180deg);
         }
 
 
-        .box{
-            perspective: 1000;
-            margin: 200px auto;
-            width: 300px;
-            height: 500px;
-            background-color: red;
-            transform: rotateX(0deg);
 
-        }
     </style>
 </head>
 <body>
@@ -61,16 +57,24 @@
     <div class="flipper">
         <div class="front">
             <!-- 前面内容 -->
-            <img src="images/advertiser/PPTV.png" alt="">
+            <h1>标题</h1>
+            <p>内容</p>
         </div>
         <div class="back">
             <!-- 背面内容 -->
-            <img src="images/advertiser/aiqiyi.png" alt="">
+            <h1>标题2</h1>
+            <p>内容2</p>
         </div>
     </div>
 </div>
+<div class="container">
+    <div class="box">
+        我是父亲
+        <div class="child">我是一个儿子</div>
+    </div>
+    <div class="test"></div>
+</div>
 
-<div class="box"></div>
 
 </body>
 </html>

@@ -68,6 +68,10 @@ a{
     justify-content: center;
     align-items: center;
 }
+.navbar-nav>li>a{
+    display: inline-block;
+    width:100%;
+}
 .navbar-nav>li.current>a{
     color:#1ba4e9;
 }
@@ -157,5 +161,8 @@ a{
     color: #ffffff;
     display: inline-block;
     width: 60px;
+}
+.general-title{
+    font-weight: 100;
 }
 /*导航条部分结束*/

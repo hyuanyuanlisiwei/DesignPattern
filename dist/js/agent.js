@@ -1,0 +1,1 @@
+var mapChart=null;$(function(){initMap()});

@@ -84,8 +84,8 @@
     line-height: 2em;
     color: #fff;
 }
-.adver-develop{
-    padding-top: 100px;
+.adver-develop, .adver-media,.adver-brand,.adver-case{
+    padding-top: 182px;
 }
 .adver-title{
     margin-bottom: 50px;
@@ -157,7 +157,6 @@
     color: #999999;
 }
 .adver-media{
-    padding-top: 80px;
     height: 500px;
     background: url("../images/advertiser/hm_bg.png") no-repeat 0 0;
     background-size:100%;
@@ -190,11 +189,10 @@
     transform: rotateY(180deg);
 }
 
-.flip-container, .front, .back {
+.column>.flip-container,.column>.flip-container>.front,.column>.flip-container>.back {
     width: 118px;
     height: 118px;
 }
-
 /* flip speed goes here */
 .flipper {
     transition: 0.6s;
@@ -209,12 +207,10 @@
     top: 0;
     left: 0;
 }
-
 /* front pane, placed above back */
 .front {
     z-index: 2;
 }
-
 /* back, initially hidden pane */
 .back {
     transform: rotateY(180deg);
@@ -245,28 +241,78 @@
 .adver-brand-part>p{
     font-size: 14px;
 }
-.adver-brand-parts>.adver-brand-part:nth-child(1){
-    background: #5079a7;
+/*品牌全案详情*/
+.flip-container2:hover .flipper2,.flip-container2.hover .flipper2{
+    transform: rotateY(180deg);
 }
-.adver-brand-parts>.adver-brand-part:nth-child(2){
-    background: #635bb0;
+.flip-container2, .front2, .back2, .flipper2{
+    width: 200px;
+    height: 200px;
 }
-.adver-brand-parts>.adver-brand-part:nth-child(3){
-    background: #49a78d;
+.flipper2{
+    transition: .6s;
+    transform-style: preserve-3d;
+    position: relative;
 }
-.adver-brand-parts>.adver-brand-part:nth-child(4){
-    background: #1a406d;
+.front2{
+    z-index: 2;
+    text-align: center;
+    padding-top: 76px;
 }
+.front2>h2{
+    margin-bottom: 20px;
+}
+.front2, .back2{
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.back2{
+    padding: 10px;
+    line-height: 20px;
+    transform: rotateY(180deg);
+    border-radius: 5px;
+}
+.back2>p{
+    margin-bottom:15px;
+}
+.brand1>.front2,.brand1>.back2{
+    background-color: #5079a7;
+}
+
+.brand2>.front2, .brand2>.back2{
+    background-color: #635bb0;
+}
+
+.brand3>.front2,.brand3>.back2{
+    background-color:#49a78d;
+}
+.brand4>.front2,.brand4>.back2{
+    background-color:#1a406d;
+}
+.back2{
+    height: auto;
+    top: -30px;
+}
+.brand1>.back2{
+    top:-100px;
+}
+.back2>h2, .back2>div{
+    font-size: 4px;
+    line-height: 1.5em;
+    height: auto;
+}
+/*品牌全案详情结束*/
 .adver-case{
-    height: 600px;
+    height: 650px;
     background: #7b89a4;
 }
 .adver-case>.w{
     position: relative;
 }
 .adver-case-title{
-    padding-top: 80px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     color: #ffffff;
 }
 .adver-case-title>h2{
@@ -321,7 +367,7 @@
 }
 .adver-case>.w>.arrow{
     position: absolute;
-    top:360px;
+    top:230px;
     z-index: 2;
     width: 40px;
     height: 40px;
@@ -344,10 +390,13 @@
 #next{
     right: -60px;
 }
+.adver-case{
+    padding-bottom: 100px;
+}
 /*第一部分结束*/
 /*页脚*/
 .footer{
-    height: 120px;
+    height: 90px;
     background-color: #54667b;
     color: #ffffff;
 }
@@ -362,3 +411,69 @@
     font-size:12px;
 }
 /*页脚结束*/
+
+/*广告主*/
+.dev-parts{
+    padding-top: 146px;
+}
+.dev-title{
+    font-family: zaozi;
+    margin-bottom: 50px;
+}
+.dev-title>h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.dev-title>div{
+    font-size: 14px;
+    color: #636c7b;
+}
+.dev-parts-adver{
+    background-image:-webkit-linear-gradient(top, #1fa6e8, #ffffff);
+}
+.dev-parts-adver>.w{
+    height: 600px;
+    background: url("../images/developer/guanggaozhu_bg.png") no-repeat;
+    background-size: 100% 100%;
+
+}
+.dev-parts-adver .dev-title>h2, .dev-parts-adver .dev-title>div{
+    color: #ffffff;
+}
+.dev-adver-box{
+    transform: rotate(-45deg);
+    transform-origin:300px 300px;
+    margin-left:200px;
+}
+.dev-adver-box>.dev-adver-group{
+    position: relative;
+    overflow: hidden;
+}
+.dev-adver-group>.box{
+    width:150px;
+    height:150px;
+    float: left;
+}
+.dev-adver{
+    overflow: hidden;
+}
+.dev-adver-group>.box>img{
+    transform: rotate(90deg);
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.group2{
+    left: 150px;
+}
+.group3{
+    left: 300px;
+}
+.group4{
+    left: 450px;
+}
+
+/*广告主结束*/

@@ -17,15 +17,9 @@
 }
 .agent-content>.w{
     font-size:14px;
-    color: #a1a1a1;
     line-height: 2em;
 }
-.agent-content .ti5>p{
-    text-indent: 5em;
-}
-.agent-content .ti12>p{
-    text-indent: 12em;
-}
+
 .agent-content .mt20{
     margin-top: 20px;
 }
@@ -123,10 +117,20 @@
 .agent-img-box>.img:nth-child(11):hover{
     background-image: url("../images/agent/蘑菇街.jpg");
 }
+.agent-map{
+    padding-top: 100px;
+    background: url(http://static.f2time.com/FF_images/map.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    position: relative;
+}
+.map{
+    background-color: #4D4D66;
+}
 /*第一部分结束*/
 /*页脚*/
 .footer{
-    height: 120px;
+    height: 90px;
     background-color: #54667b;
     color: #ffffff;
 }

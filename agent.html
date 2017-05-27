@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style/agent.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/common.js"></script>
-    <script src="js/agent.js"></script>
 </head>
 <body>
 <nav class="nav">
@@ -40,12 +39,8 @@
                 <li><a href="advertiser.html#brand">品牌全案</a></li>
             </ul>
         </li>
-        <li class="dropdown">
+        <li>
             <a href="agent.html">代理商</a>
-            <span class="caret"></span>
-            <ul class="dropdown-menu">
-                <li><a href="agent.html#ffa">FFA</a></li>
-            </ul>
         </li>
         <li class="dropdown">
             <a href="brief.html">关于我们</a>
@@ -73,7 +68,7 @@
 <section class="section agent-content">
     <div class="w">
         <p>
-            非凡时代传媒科技成立于2014年。自成立以来发展迅速。先后在北京、湖北、浙江等地，发展多家代理商，建立长期稳定的合作关系。
+            非凡互联传媒科技成立于2014年。自成立以来发展迅速。先后在北京、湖北、浙江等地，发展多家代理商，建立长期稳定的合作关系。
             管理模式专业化，销售业绩稳步攀升，非凡传媒已在业界取得不凡的成就。
         </p>
         <p>
@@ -153,17 +148,154 @@
         </div>
     </div>
 </section>
+<a name="map"></a>
+<section class="section agent-map">
+    <div class="w">
+        <div class="map" id="map" style="height: 500px"></div>
+    </div>
+</section>
 <footer class="section footer">
     <div class="w">
-        <div class="footer-parts">
-            <p>商务合作</p>
-            <p>人才招聘</p>
-            <p>联系我们</p>
-            <p>隐私策略</p>
-        </div>
-        <p class="tc">版权所有 非凡时代 京ICP备14050828号-1</p>
-        <p class="tc">Copyright @2014-2015 FEIFANCHUANMEI Technology All rights reserved.</p>
+        <p class="tc">版权所有 非凡互联 京ICP备16034109号-2</p>
+        <p class="tc">Copyright ©2014-2017 FEIFANHULIAN Technology All rights reserved</p>
     </div>
 </footer>
+<script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+<script>
+    var mapChart=null;
+    $(function(){
+        initMap();
+    });
+    function initMap(){
+        // 路径配置
+        require.config({
+            paths: {
+                echarts: 'http://echarts.baidu.com/build/dist'
+            }
+        });
+        // 使用
+        require(['echarts','echarts/chart/map'],function (ch) {
+            // 基于准备好的dom，初始化echarts图表
+            var myChart = ch.init(document.getElementById('map'));
+            option = {
+                tooltip : {
+                    trigger: 'item',
+                    formatter: function(data){
+                        return getCompany(data[1]);
+                    }
+                },
+                dataRange:{
+                    min:0,
+                    max:20,
+                    x:'10%',
+                    y:'bottom',
+                    text:['高','低'],
+                    calculable:true,
+                    textStyle:{
+                        color:'#fff'
+                    }
+                },
+                roamController:{
+                    show:true,
+                    x:'right',
+                    mapTypeControl:{
+                        'china':true
+                    }
+                },
+                series : [{
+                    name: '中国',
+                    type: 'map',
+                    mapType: 'china',
+                    selectedMode : 'multiple',
+                    itemStyle:{
+                        normal:{label:{show:true}},
+                        emphasis:{label:{show:true},areaStyle:{color:'#ff6468'}}
+                    },
+                    data:[
+                        {name:'河南',value:2},
+                        {name:'河北',value:2},
+                        {name:'北京',value:13},
+                        {name:'湖北',value:3},
+                        {name:'江西',value:3},
+                        {name:'广东',value:2},
+                        {name:'安徽',value:3},
+                        {name:'四川',value:4},
+                        {name:'贵州',value:1},
+                        {name:'甘肃',value:1},
+                        {name:'江苏',value:3},
+                        {name:'上海',value:1},
+                        {name:'福建',value:1},
+                        {name:'浙江',value:5},
+                        {name:'云南',value:2},
+                        {name:'海南',value:2}
+                    ]
+                }]
+            };
+            // 为echarts对象加载数据
+            myChart.setOption(option);
+            window.onresize=myChart.resize;
+        });
+    }
+    function getCompany(province){
+        var ret;
+        switch(province){
+            case '河南':
+                ret="<ul><li>新锐文化传媒</li><li>发现之旅文化传播</li></ul>";
+                break;
+            case '河北':
+                ret="<ul><li>深度视觉文化传播</li><li>索尔广告</li></ul>";
+                break;
+            case '北京':
+                ret="<ul><li>中联数通科技</li><li>海拓智方科技</li><li>新澜互动广告</li><li>尚品百姿电子商务</li>"
+                    +"<li>易汇众盟网络技术</li><li>光音网</li><li>合众春秋科技</li><li>艾普卓克游戏</li>"
+                    +"<li>艾普卓克咨询</li><li>中视百纳国际广告</li><li>蜜莱坞网络科技（映客直播）</li><li>小子科技</li>"
+                    +"</ul>";
+                break;
+            case '湖北':
+                ret="<ul><li>武汉秀搜</li><li>微楚众智科技</li><li>二元文化传媒</li></ul>";
+                break;
+            case '江西':
+                ret="<ul><li>三尚信息技术</li><li>阡陌文化传媒</li><li>第一枪信息技术</li></ul>";
+                break;
+            case '广东':
+                ret="<ul><li>惠州粤传媒文化传播</li><li>互域文化</li></ul>";
+                break;
+            case '安徽':
+                ret="<ul><li>元成文化传媒</li><li>精众广告传媒</li><li>金邦网络科技</li></ul>";
+                break;
+            case '四川':
+                ret="<ul><li>众成达品牌策划</li><li>鼎视广告</li><li>开发区灵通广告传媒</li><li>帮帮广告传媒</li><li>金耀广告传媒</li></ul>";
+                break;
+            case '贵州':
+                ret="<ul><li>方元至诚广告装饰工程</li></ul>";
+                break;
+            case '甘肃':
+                ret="<ul><li>平凉云文化传媒</li></ul>";
+                break;
+            case '江苏':
+                ret="<ul><li>方钻网络科技</li><li>众知广告</li><li>凤凰城广告</li></ul>";
+                break;
+            case '上海':
+                ret="<ul><li>祈诺文化传播</li></ul>";
+                break;
+            case '福建':
+                ret="<ul><li>千永广告</li></ul>";
+                break;
+            case '浙江':
+                ret="<ul><li>火图科技</li><li>博盛广告传媒</li><li>乐清方舟传媒</li><li>探索文化传媒</li><li>聚米网络技术</li></ul>";
+                break;
+            case '云南':
+                ret="<ul><li>理想科技</li><li>乌峰文化传播</li></ul>";
+                break;
+            case '海南':
+                ret="<ul><li>阿洋科技</li><li>共赢文化传播发展</li></ul>";
+                break;
+            default:
+                ret=province;
+                break;
+        }
+        return ret;
+    }
+</script>
 </body>
 </html>

@@ -9,13 +9,39 @@ $(function () {
         $(this).addClass("current");
     });
 });
-var adverCount=2;
+var adverCount=0;
 function adverTurns() {
     var imgsList=$("#adver-case-turns");
     var next=$("#next");
     var prev=$("#prev");
     var width=1000;
     var maxWidth=width*3;
+    var timer=null;
+
+    prev.mouseover(function () {
+        clearInterval(timer);
+        timer=null;
+    });
+    prev.mouseleave(function () {
+        startTimer();
+    });
+    next.mouseover(function () {
+        clearInterval(timer);
+        timer=null;
+    });
+    next.mouseleave(function () {
+        startTimer();
+    });
+
+    function startTimer() {
+       timer=setInterval(function () {
+           adverCount++;
+           if(adverCount>2){
+               adverCount=0;
+           }
+           imgsList.animate({left:-adverCount*width},500);
+       },2000);
+    }
     prev.on("click",function () {
         adverCount--;
         if(adverCount<0){
@@ -31,6 +57,7 @@ function adverTurns() {
         animateAd();
     });
     function animateAd() {
-        imgsList.animate({left:-adverCount*width});
+        imgsList.animate({left:-adverCount*width},500);
     }
+    startTimer();
 }

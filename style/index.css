@@ -149,7 +149,7 @@
 }
 .adver-parts>.adver-img-box>.adver-img-turns>.img-list{
     position:absolute;
-    width: 1250px;
+    width: 750px;
     z-index: 1;
 }
 .adver-parts>.adver-img-box>.adver-img-turns>.img-list>.img{
@@ -254,6 +254,7 @@ a.bg-a:after{
     padding-top: 80px;
 }
 .agent-content>.agent-title{
+    font-weight: 100;
     display: block;
     height: 60px;
     line-height:60px;
@@ -291,8 +292,37 @@ a.bg-a:after{
     padding-bottom: 30px;
 }
 .video-ad-parts>.video-ad-img-box{
-    padding-top: 60px;
+    width: 680px;
+    margin: 0 auto;
+    margin-top: 60px;
+    position: relative;
 }
+.video-ad-parts>.video-ad-img-box>.arrow{
+    position: absolute;
+    top:95px;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgba(0,0,0,.3);
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.video-ad-parts>.video-ad-img-box>.arrow:hover{
+    background-color: rgba(0,0,0,.7);
+}
+#video-prev{
+    left: 0px;
+}
+#video-next{
+    right: 0px;
+}
+
 .video-ad-parts>.video-ad-content>p{
     width: 800px;
     margin: 0 auto;
@@ -385,7 +415,7 @@ a.bg-a:after{
 /*联系方式结束*/
 /*页脚*/
 .footer{
-    height: 120px;
+    height: 90px;
     background-color: #54667b;
     color: #ffffff;
 }
@@ -399,4 +429,43 @@ a.bg-a:after{
     padding-top: 20px;
     font-size:12px;
 }
+
+/*合作伙伴部分*/
+.dev-parts{
+    padding-top: 146px;
+}
+.dev-title{
+    font-family: zaozi;
+    margin-bottom: 50px;
+}
+.dev-title>h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.dev-title>div{
+    font-size: 14px;
+    color: #636c7b;
+}
+.dev-partner-box{
+    width:660px;
+    margin: 0 auto;
+    position: relative;
+    left: 50px;
+}
+.dev-partner-group{
+    overflow: hidden;
+    position: relative;
+}
+.dev-partner-group:nth-of-type(2){
+    left:-50px;
+    top: -30px;
+}
+.dev-partner-group:nth-of-type(3){
+    top:-60px;
+}
+.dev-partner-group>img{
+    margin: 5px;
+    float:left;
+}
+/*合作伙伴部分结束*/
 /*页脚结束*/
