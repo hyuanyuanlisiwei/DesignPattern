@@ -10,10 +10,16 @@ $(function () {
 });
 //滚动到指定位置
 function  scroll(hash) {
-   var name=hash.slice(1);
+    var name=hash.slice(1);
     $("html,body").animate({
         scrollTop:$("a[name='"+name+"']").offset().top
     },1000);
+    //是否有nav-container;
+    if($(".nav-container").length>0){
+        var hrefs=$(".nav-box").find("a");
+        hrefs.removeClass("current");
+        hrefs.filter("[href='"+hash+"']").addClass("current");
+    }
 }
 function currentNav() {
     var pathname=window.location.pathname;
