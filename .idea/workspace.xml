@@ -3,14 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="817979ee-d740-4f77-82ec-79c604f0fb0d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/advertiser.js" afterPath="$PROJECT_DIR$/dist/js/advertiser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/brief.js" afterPath="$PROJECT_DIR$/dist/js/brief.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/common.js" afterPath="$PROJECT_DIR$/dist/js/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/developer.js" afterPath="$PROJECT_DIR$/dist/js/developer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/advertiser.js" afterPath="$PROJECT_DIR$/js/advertiser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/brief.js" afterPath="$PROJECT_DIR$/js/brief.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/common.js" afterPath="$PROJECT_DIR$/js/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/developer.js" afterPath="$PROJECT_DIR$/js/developer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/developer.html" afterPath="$PROJECT_DIR$/developer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/developer.html" afterPath="$PROJECT_DIR$/dist/developer.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,7 +79,6 @@
         <option value="$PROJECT_DIR$/js/index.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/agent.html" />
-        <option value="$PROJECT_DIR$/developer.html" />
         <option value="$PROJECT_DIR$/style/developer.css" />
         <option value="$PROJECT_DIR$/style/advertiser.css" />
         <option value="$PROJECT_DIR$/brief.html" />
@@ -94,6 +87,7 @@
         <option value="$PROJECT_DIR$/js/advertiser.js" />
         <option value="$PROJECT_DIR$/js/developer.js" />
         <option value="$PROJECT_DIR$/js/brief.js" />
+        <option value="$PROJECT_DIR$/developer.html" />
       </list>
     </option>
   </component>
@@ -327,7 +321,7 @@
       <workItem from="1495793754943" duration="36000" />
       <workItem from="1495849421614" duration="11583000" />
       <workItem from="1495875470851" duration="4000" />
-      <workItem from="1496288151944" duration="10677000" />
+      <workItem from="1496288151944" duration="10898000" />
     </task>
     <task id="LOCAL-00001" summary="更改导航">
       <created>1496289724511</created>
@@ -340,7 +334,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56345000" />
+    <option name="totallyTimeSpent" value="56566000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1680" height="1006" extended-state="0" />
@@ -648,17 +642,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/developer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding>
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/advertiser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
@@ -708,6 +691,17 @@
         <state relative-caret-position="177">
           <caret line="12" column="43" lean-forward="true" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/developer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="155" column="34" lean-forward="false" selection-start-line="155" selection-start-column="34" selection-end-line="155" selection-end-column="34" />
+          <folding>
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
