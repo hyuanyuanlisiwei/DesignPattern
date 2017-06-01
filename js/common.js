@@ -14,12 +14,6 @@ function  scroll(hash) {
     $("html,body").animate({
         scrollTop:$("a[name='"+name+"']").offset().top
     },1000);
-    //是否有nav-container;
-    if($(".nav-container").length>0){
-        var hrefs=$(".nav-box").find("a");
-        hrefs.removeClass("current");
-        hrefs.filter("[href='"+hash+"']").addClass("current");
-    }
 }
 function currentNav() {
     var pathname=window.location.pathname;

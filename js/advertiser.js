@@ -8,11 +8,12 @@ $(function () {
         $(this).siblings("a").removeClass("current");
         $(this).addClass("current");
     });
-    //监听滚动条的滚动
+    // 监听滚动条的滚动
     (function () {
         var cur=0;
         $(window).scroll(function (event) {
             var windPos=$(window).scrollTop();
+            console.log(windPos);
 
             if(cur!=0 && (windPos>500 && windPos<520)){
                 cur=0;
@@ -28,6 +29,14 @@ $(function () {
                 cur=4;
             }else if(windPos==0){
                 cur=0;
+            }
+
+            var navArr=[535,1206,1786,2417,3067];
+            for(var i=0;i<navArr.length;i++){
+                if(navArr[i]==windPos){
+                    cur=i;
+                    break;
+                }
             }
             $(".nav-box>a").removeClass("current");
             $(".nav-box>a:eq("+cur+")").addClass("current");

@@ -23,6 +23,14 @@ $(function () {
             }else if(windPos==0){
                 cur=0;
             }
+            var navArr=[535,1210];
+            for(var i=0;i<navArr.length;i++){
+                if(navArr[i]==windPos){
+                    cur=i;
+                    break;
+                }
+            }
+
             $(".nav-box>a").removeClass("current");
             $(".nav-box>a").eq(cur).addClass("current");
         });
