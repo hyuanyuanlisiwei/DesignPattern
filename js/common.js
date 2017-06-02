@@ -39,6 +39,9 @@ function currentNav() {
         case "/recruit.html":
             current=5;
             break;
+        case "/cooperate.html":
+            current=5;
+            break;
     }
     $(".navbar-nav>li").removeClass("current").eq(current).addClass("current");
 }
