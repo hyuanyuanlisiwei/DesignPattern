@@ -25,19 +25,16 @@ function sendEmail() {
             }
         });
     });
-
-
 }
 
-
 var adverCount=0;
-var adverTitleList=["banner广告","开屏广告","信息流广告"];
+var adverTitleList=["banner广告","开屏广告","信息流广告","贴片广告"];
 function adverTurns() {
     var imgsList=$("#adver-imgs");
     var next=$("#adver-next");
     var prev=$("#adver-prev");
     var width=250;
-    var maxWidth=width*3;
+    var maxWidth=width*4;
     var timer=null;
     $(".adver-img-box").mouseover(function () {
         clearInterval(timer);
@@ -50,7 +47,7 @@ function adverTurns() {
         timer=setInterval(animate,2000);
         function animate() {
             adverCount++;
-            if(adverCount>2){
+            if(adverCount>3){
                 adverCount=0;
             }
             imgsList.animate({left:-adverCount*width},1000);
@@ -60,14 +57,14 @@ function adverTurns() {
     prev.on("click",function () {
         adverCount--;
         if(adverCount<0){
-            adverCount=2;
+            adverCount=3;
         }
         imgsList.animate({left:-adverCount*width},500);
         $(".adver-img-title").html(adverTitleList[adverCount]);
     });
     next.on("click",function () {
         adverCount++;
-        if(adverCount>2){
+        if(adverCount>3){
             adverCount=0;
         }
         imgsList.animate({left:-adverCount*width},500);

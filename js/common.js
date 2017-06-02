@@ -36,6 +36,9 @@ function currentNav() {
         case "/brief.html":
             current=4;
             break;
+        case "/recruit.html":
+            current=5;
+            break;
     }
     $(".navbar-nav>li").removeClass("current").eq(current).addClass("current");
 }

@@ -1,0 +1,96 @@
+/*首页*/
+.section{
+    width:100%;
+    position: relative;
+    z-index: 50;
+    padding-bottom: 50px;
+    display: block;
+}
+.section>.w{
+    width: 1000px;
+    margin: 0 auto;
+}
+/*banner*/
+.recruit-banner{
+    margin-top: 50px;
+    height:275px;
+    background-image: url(../images/banner.png);
+}
+.recruit-banner p{
+    color: #ffffff;
+    height: 275px;
+    font-size: 28px;
+    line-height: 275px;
+}
+/*banner结束*/
+/*introduce*/
+.recruit-introduce p{
+    line-height: 2em;
+    margin-bottom: 30px;
+}
+.recruit-introduce p:nth-child(1){
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.recruit-introduce p:nth-child(2){
+    text-align: center;
+    margin-bottom: 50px;
+}
+.recruit-introduce p:nth-child(2)>span:nth-child(1){
+    margin:0 5px;
+}
+.recruit-introduce p:nth-child(2)>span:nth-child(2){
+    color: #0ccc9e;
+}
+.recruit-introduce ul>li{
+    margin-left: 10px;
+    line-height: 1.5em;
+}
+.recruit-introduce ul>li:before{
+    content: "-";
+    margin-right: 5px;
+}
+/*introduce结束*/
+.recruit-jobs,.recruit-introduce{
+    padding-bottom: 100px;
+}
+.recruit-jobs>.w{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.recruit-jobs>.w>.intro{
+    line-height: 1.5em;
+}
+.recruit-jobs>.w>.intro li:before{
+    content:"-";
+    margin-right: 5px;
+}
+.recruit-jobs>.w>.intro ul,.recruit-jobs h2{
+    margin-bottom:20px;
+}
+.recruit-jobs>.w>.intro h1{
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+
+
+/*页脚*/
+.footer{
+    height: 90px;
+    background-color: #54667b;
+    color: #ffffff;
+}
+.footer-parts{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+.footer>.w>p{
+    padding-top: 20px;
+    font-size:12px;
+}
+/*页脚结束*/
