@@ -72,7 +72,10 @@
     color: #fff;
 }
 .dev-parts{
-    padding-top: 146px;
+    margin-top: 146px;
+}
+.dev-parts-ssp,.dev-parts-sdk,.dev-parts-ad-style{
+    padding-top:182px;
 }
 .dev-title{
     font-family: zaozi;
@@ -187,6 +190,47 @@
     margin: 5px;
     float:left;
 }
+.dev-ads-box{
+    width: 880px;
+    overflow: hidden;
+}
+.dev-ads-list{
+    width: 1780px;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.dev-ads-list>.dev-ad{
+    width: 280px;
+    float: left;
+    overflow: hidden;
+}
+.dev-ads-list>.dev-ad>.dev-content{
+    height: 200px;
+}
+.dev-ad:not(:last-child){
+    margin-right: 20px;
+}
+.dev-ad>.dev-ad-content{
+    background-color: #fff;
+    padding: 20px;
+    line-height: 2em;
+    height: 232px;
+}
+.dev-ad-content>p:nth-of-type(1){
+    font-size: 12px;
+    color: #bcbcbc;
+    margin-bottom: 20px;
+}
+.dev-ad-content>p:nth-of-type(2){
+    color: #bcbcbc;
+}
+.dev-parts-ad-style{
+    background: url("../images/广告样式bg.png") no-repeat 432px -132px;
+    background-size: 62%;
+}
+
 /*页脚*/
 .footer{
     height: 120px;

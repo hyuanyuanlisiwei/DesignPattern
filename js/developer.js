@@ -35,4 +35,16 @@ $(function () {
             $(".nav-box>a").eq(cur).addClass("current");
         });
     })();
+    //广告样式轮播
+    (function () {
+        var timer=null;
+        count=0;
+        timer=setInterval(function () {
+            count++;
+            if(count==4){
+                count=0;
+            }
+            $("#dev-ads-list").animate({left:-300*count},500);
+        },2000);
+    })();
 });
