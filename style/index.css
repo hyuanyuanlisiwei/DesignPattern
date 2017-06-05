@@ -35,6 +35,10 @@
     bottom: -8px;
     right: -20px;
 }
+.notebook{
+    background: url("../images/400_300_netbook.png") no-repeat;
+    background-size: 220px;
+}
 .books{
     position: relative;
     height: 180px;
