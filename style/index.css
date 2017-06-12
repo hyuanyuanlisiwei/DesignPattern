@@ -56,6 +56,12 @@
     left:120px;
     top:-55px;
 }
+.notebook>.container{
+    position: absolute;
+    right:0px;
+    bottom: 8px;
+}
+
 .books>.moleskine{
     left:430px;
     top:-20px;
@@ -373,6 +379,7 @@ a.bg-a:after{
 /*联系方式*/
 .contact{
     padding-top: 80px;
+    background-color: #eef5fc;
 }
 .contact-parts{
     display: flex;
