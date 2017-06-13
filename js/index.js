@@ -36,6 +36,7 @@ function adverTurns() {
     var width=250;
     var maxWidth=width*4;
     var timer=null;
+    var title='';
     $(".adver-img-box").mouseover(function () {
         clearInterval(timer);
         timer=null;
@@ -47,28 +48,47 @@ function adverTurns() {
         timer=setInterval(animate,2000);
         function animate() {
             adverCount++;
-            if(adverCount>3){
+            if(adverCount==5){
                 adverCount=0;
+                imgsList.css({left:-250});
+            }else{
+                imgsList.animate({left:-(adverCount+1)*width},1000);
             }
-            imgsList.animate({left:-adverCount*width},1000);
-            $(".adver-img-title").html(adverTitleList[adverCount]);
+            title=adverTitleList[adverCount];
+            if(!adverTitleList[adverCount]){
+                title=adverTitleList[0];
+            }
+            $(".adver-img-title").html(title);
         }
     }
     prev.on("click",function () {
         adverCount--;
         if(adverCount<0){
             adverCount=3;
+            imgsList.css({left:-(adverCount+1)*width});
+        }else{
+            imgsList.animate({left:-(adverCount+1)*width},500);
         }
-        imgsList.animate({left:-adverCount*width},500);
-        $(".adver-img-title").html(adverTitleList[adverCount]);
+        title=adverTitleList[adverCount];
+        if(!title){
+            title=adverTitleList[0];
+        }
+        $(".adver-img-title").html(title);
     });
     next.on("click",function () {
         adverCount++;
-        if(adverCount>3){
-            adverCount=0;
+        if(adverCount==5){
+            adverCount=1;
+            imgsList.css({left:-500});
+        }else{
+            imgsList.animate({left:-(adverCount+1)*width},500);
         }
-        imgsList.animate({left:-adverCount*width},500);
-        $(".adver-img-title").html(adverTitleList[adverCount]);
+        title=adverTitleList[adverCount];
+        if(!title){
+            title=adverTitleList[0];
+        }
+
+        $(".adver-img-title").html(title);
     });
     //设置定时器
     startTimer();
@@ -90,7 +110,7 @@ function videoTurns() {
         startTimer();
     });
     function startTimer() {
-        timer=setInterval(animate,15000);
+        timer=setInterval(animate,5000);
         function animate() {
             videoCurrent++;
             if(videoCurrent==3){
@@ -113,7 +133,7 @@ function videoTurns() {
         if(videoCurrent>2){
             videoCurrent=0;
         }
-        imgsList.animate({left:-adverCount*width},500);
+        imgsList.animate({left:-videoCurrent*width},500);
         btns.removeClass("current").eq(videoCurrent).addClass("current");
     });
     startTimer();

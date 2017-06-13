@@ -16,7 +16,8 @@ function  scroll(hash) {
     },1000);
 }
 function currentNav() {
-    var pathname=window.location.pathname;
+    var pathname=window.location.pathnampathname.lastIndexOf("/");
+    pathname=pathname.slice(pathname.lastIndexOf('/'));
     var hash=window.location.hash;
     var current=0;
     switch (pathname){

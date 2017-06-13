@@ -41,10 +41,12 @@ $(function () {
         count=0;
         timer=setInterval(function () {
             count++;
-            if(count==4){
+            if(count==5){
                 count=0;
+                $("#dev-ads-list").css({left:0});
+            }else{
+                $("#dev-ads-list").animate({left:-300*count},500);
             }
-            $("#dev-ads-list").animate({left:-300*count},500);
         },2000);
     })();
 });
