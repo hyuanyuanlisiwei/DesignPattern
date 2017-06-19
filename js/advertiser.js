@@ -13,8 +13,6 @@ $(function () {
         var cur=0;
         $(window).scroll(function (event) {
             var windPos=$(window).scrollTop();
-            console.log(windPos);
-
             if(cur!=0 && (windPos>500 && windPos<520)){
                 cur=0;
             }else if(cur!=1 && (windPos>1000 && windPos<1020)){

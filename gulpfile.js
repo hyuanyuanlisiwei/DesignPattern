@@ -26,7 +26,7 @@ gulp.task("style",function () {
 //操作图片
 const imagemin=require("gulp-imagemin");
 gulp.task("image",function () {
-    gulp.src("images/**/*.{png,jpg,jpeg,gif}")
+    gulp.src("images/**/*.{png,jpg,jpeg,gif,ico}")
         .pipe(imagemin())
         .pipe(gulp.dest("dist/images"))
         .pipe(browserSync.stream());

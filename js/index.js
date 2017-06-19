@@ -110,7 +110,7 @@ function videoTurns() {
         startTimer();
     });
     function startTimer() {
-        timer=setInterval(animate,5000);
+        timer=setInterval(animate,15000);
         function animate() {
             videoCurrent++;
             if(videoCurrent==3){
