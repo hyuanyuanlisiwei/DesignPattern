@@ -2,29 +2,24 @@
  * Created by hyylsw on 2017/5/10.
  */
 $(function () {
-    $(".dev-nav-box a").on("click",function () {
-        $(this).siblings("a").removeClass("current");
-        $(this).addClass("current");
-    });
-
     //监听滚动条的滚动
     (function(){
         var cur=0;
         $(window).scroll(function (event) {
             var windPos=$(window).scrollTop();
             //500---ssp
-            if(cur!=0 && (windPos>500 && windPos<520)){
+            if(cur!=0 && (windPos>500 && windPos<1000)){
                 cur=0;
-            }else if(cur!=1 && (windPos>1000 && windPos<1020)){
+            }else if(cur!=1 && (windPos>1400 && windPos<1600)){
                 cur=1;
-            }else if(cur!=2 && (windPos>2255 && windPos<2275)){
+            }else if(cur!=2 && (windPos>2255 && windPos<2600)){
                 cur=2;
             }else if(windPos==$(document).height()-$(window).height()){
                 cur=2;
             }else if(windPos==0){
                 cur=0;
             }
-            var navArr=[535,1210,2236];
+            var navArr=[535,1538,2499];
             for(var i=0;i<navArr.length;i++){
                 if(navArr[i]==windPos){
                     cur=i;
@@ -49,4 +44,10 @@ $(function () {
             }
         },2000);
     })();
+
+    $(".dev-nav-box>a").on("click",function () {
+        console.log('------------');
+        $(this).siblings("a").removeClass("current");
+        $(this).addClass("current");
+    });
 });
