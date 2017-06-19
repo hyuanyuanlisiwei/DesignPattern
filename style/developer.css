@@ -42,9 +42,6 @@
     font-size: 14px;
     padding-bottom: 3px;
 }
-.dev-nav-box>a>div{
-    font-size: 1px;
-}
 .dev-nav-box>a.current{
     color: #fff;
     background-color: #02d0a7;

@@ -42,9 +42,7 @@
     font-size: 14px;
     padding-bottom: 3px;
 }
-.adver-nav-box>a>div{
-    font-size: 1px;
-}
+
 .adver-nav-box>a.current{
     color: #fff;
     background-color: #02d0a7;
@@ -186,7 +184,12 @@
 /* entire container, keeps perspective */
 /* flip the pane when hovered */
 .flip-container:hover .flipper, .flip-container.hover .flipper {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
+
 }
 
 .column>.flip-container,.column>.flip-container>.front,.column>.flip-container>.back {
@@ -195,13 +198,22 @@
 }
 /* flip speed goes here */
 .flipper {
-    transition: 0.6s;
-    transform-style: preserve-3d;
     position: relative;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    transition: .6s;
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style:preserve-3d;
+    -ms-transform-style:preserve-3d;
+    transform-style: preserve-3d;
 }
 
 /* hide back of pane during swap */
 .front, .back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     backface-visibility: hidden;
     position: absolute;
     top: 0;
@@ -213,6 +225,10 @@
 }
 /* back, initially hidden pane */
 .back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 
@@ -243,6 +259,10 @@
 }
 /*品牌全案详情*/
 .flip-container2:hover .flipper2,.flip-container2.hover .flipper2{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 .flip-container2, .front2, .back2, .flipper2{
@@ -250,7 +270,14 @@
     height: 200px;
 }
 .flipper2{
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
     transition: .6s;
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style:preserve-3d;
+    -ms-transform-style:preserve-3d;
     transform-style: preserve-3d;
     position: relative;
 }
@@ -263,6 +290,8 @@
     margin-bottom: 20px;
 }
 .front2, .back2{
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     backface-visibility: hidden;
     position: absolute;
     top: 0;
@@ -271,6 +300,10 @@
 .back2{
     padding: 10px;
     line-height: 20px;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
     border-radius: 5px;
 }

@@ -43,7 +43,7 @@
     position: relative;
     height: 180px;
 }
-.books>div{
+.books div{
     position: absolute;
     left:0;
     top: 0;
@@ -52,7 +52,7 @@
     left: -20px;
     top:18px;
 }
-.books>.notebook{
+.books .notebook{
     left:120px;
     top:-55px;
 }

@@ -39,9 +39,6 @@
     font-size: 14px;
     padding-bottom: 3px;
 }
-.brief-nav-box>a>div{
-    font-size: 1px;
-}
 .brief-nav-box>a.current{
     color: #fff;
     background-color: #02d0a7;

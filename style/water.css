@@ -20,7 +20,7 @@
         opacity: 0.0;
     }
 }
-@-webkit-keyframes "warn" {
+@-webkit-keyframes warn{
     0% {
         -webkit-transform: scale(0);
         opacity: 0.0;
@@ -66,8 +66,8 @@
     position: absolute;
     width: 50px;
     height: 50px;
-    left: 2px;
-    top: 2px;
+    left: 134px;
+    top: 64px;
     border: 10px solid #009cff;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
